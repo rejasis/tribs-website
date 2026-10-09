@@ -11,7 +11,7 @@ Static site (HTML, CSS, vanilla JS; no build step) built on the TRIBS design sys
 
 ## Structure
 - `css/styles.css`: design tokens (light + dark) and all components. Fonts: Archivo (headings, buttons, nav) + Source Sans 3 (body), replacing the design system's Montserrat
-- `js/main.js`: line icons (`<svg data-icon="truck">`), mobile menu, services dropdown, quote form
+- `js/main.js`: line icons (`<svg data-icon="truck">`), mobile menu, services dropdown, quote form, header shadow on scroll and the scroll-reveal motion (skipped under `prefers-reduced-motion`)
 - `assets/logos`: `tribs-emblem-light.png` (header, light mode), `tribs-emblem-white.png` (all-white emblem with red stars, for the dark-mode header and the footer) and `tribs-favicon.png` are the client's round emblem with the background keyed out and trimmed; `tribs-emblem-reversed.png` is the client's dark-background variant, kept but unused; `tribs-emblem-on-white.png` is the untouched original on white, kept as an image reference for Higgsfield prompts. The header and footer lockup is the emblem plus HTML text (`.brand`), so the wordmark stays crisp. The older `tribs-logo-horizontal*.png`, `tribs-wordmark.png` and `tribs-emblem.png` from the design system are no longer referenced.
 - `assets/photos`: site photography (see Images)
 

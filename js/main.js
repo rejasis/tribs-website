@@ -90,6 +90,45 @@
     });
   });
 
+  /* ---- Motion: header shadow on scroll + scroll reveals ---- */
+  var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (header) {
+    var onScroll = function () { header.classList.toggle("is-scrolled", window.scrollY > 8); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+  if (!reduceMotion && !document.hidden && "IntersectionObserver" in window) {
+    document.documentElement.classList.add("js-motion");
+    var groups = [".card-grid > *", ".feature-row > *", ".fleet-grid > *", ".steps > *", ".mv-grid > *", ".contact-list > li", ".footer-grid > *"];
+    var singles = [".st", ".section-intro", ".split-media", ".split-copy", ".cta-inner > *", ".form", ".map-embed"];
+    groups.forEach(function (sel) {
+      var i = 0;
+      document.querySelectorAll(sel).forEach(function (el) {
+        el.classList.add("reveal"); el.style.setProperty("--i", String(i % 6)); i++;
+      });
+    });
+    singles.forEach(function (sel) {
+      document.querySelectorAll(sel).forEach(function (el) { if (!el.classList.contains("reveal")) el.classList.add("reveal"); });
+    });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el = entry.target;
+        el.classList.add("is-visible");
+        io.unobserve(el);
+        el.addEventListener("transitionend", function done() {
+          el.classList.remove("reveal", "is-visible"); el.style.removeProperty("--i");
+          el.removeEventListener("transitionend", done);
+        });
+      });
+    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    document.querySelectorAll(".reveal").forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight * 0.9 && r.bottom > 0) { el.classList.remove("reveal"); el.style.removeProperty("--i"); }
+      else io.observe(el);
+    });
+  }
+
   /* ---- Footer year ---- */
   document.querySelectorAll("[data-year]").forEach(function (el) {
     el.textContent = new Date().getFullYear();

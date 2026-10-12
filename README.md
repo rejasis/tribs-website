@@ -1,4 +1,4 @@
-# TRIBS Logistics & Services Corp. — website
+# TRIBS Logistics & Services Co. — website
 
 Static site (HTML, CSS, vanilla JS; no build step) built on the TRIBS design system.
 
@@ -23,7 +23,7 @@ python3 -m http.server 8420
 ```
 
 ## Before launch
-- Contact details are real: +63 906 443 1326, customersupport@tribsmotor.com, 3924 Sun Valley Drive, Parañaque (map pinned at 14.4903609, 121.0352779). The About story, footer blurb and meta descriptions still say "Las Piñas City"; confirm with the client whether that should read Parañaque.
+- Contact details are real: +63 906 443 1326, customersupport@tribsmotor.com, 3924 Sun Valley Drive, Parañaque (map pinned at 14.4903609, 121.0352779).
 - The quote form opens the visitor's email app (mailto). For direct submissions, point it at a form service (e.g. Formspree) or a backend.
 - Photos are AI-generated (see Images). Swap in the client's own photography if they prefer; keep the file names.
 - Review drafted copy: About story, mission/vision, fleet and service bullet points, office hours.

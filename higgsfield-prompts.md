@@ -21,7 +21,7 @@ Photorealistic commercial photograph. Three dark green (#07582a) closed vans and
 
 ## 3. service-delivery.jpg — aspect ratio 21:9
 ```
-Photorealistic commercial photograph. A delivery rider in a dark green jacket and helmet on a green motorbike with a green insulated delivery box bearing the attached round TRIBS gear emblem, handing a parcel to a smiling shop owner at a small storefront in Las Piñas, Philippines. Warm morning light, wide banner composition. Clean and modern, no text overlays, no watermark.
+Photorealistic commercial photograph. A delivery rider in a dark green jacket and helmet on a green motorbike with a green insulated delivery box bearing the attached round TRIBS gear emblem, handing a parcel to a smiling shop owner at a small storefront in Parañaque City, Philippines. Warm morning light, wide banner composition. Clean and modern, no text overlays, no watermark.
 ```
 
 ## 4. hero-fleet.jpg — aspect ratio 3:2 (optional, replaces the hero on every page)

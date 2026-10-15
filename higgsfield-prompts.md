@@ -28,3 +28,24 @@ Photorealistic commercial photograph. A delivery rider in a dark green jacket an
 ```
 Photorealistic commercial photograph. A dark green (#07582a) TRIBS box truck with the attached round gear emblem on its side drives along an elevated highway with the Manila skyline behind it, a delivery rider on a green motorbike with a green delivery box alongside. Late afternoon light, slight motion blur on the road, wide cinematic composition with open sky on the left for headline text. No text overlays, no watermark.
 ```
+
+## Update: white trucks (edit the existing photos)
+
+Model: Nano Banana Pro (or Nano Banana 2), image-to-image. Attach the current photo as
+the first reference and `assets/logos/tribs-emblem-on-white.png` as the second. Masters
+to attach are in `assets/originals/higgsfield/` (`hero.jpg`, `truck.jpg`).
+
+### Hero (3:2) — reference: hero.jpg + emblem
+
+```
+Edit the first reference photo. Keep the exact same scene, camera angle, composition, lighting, road, bridge, bay, city skyline and the motorcycle rider: only change the box truck's paint. Repaint the entire truck WHITE: white cab, white box body, white bumper. Keep the truck's shape, model and position identical. On the side of the white box body place the round TRIBS emblem from the second reference exactly as designed (dark green gear ring, three red stars, serif TRIBS wordmark, EST. 2004) in dark green on the white panel, large and clean, plus a small dark green TRIBS emblem on the cab door. Realistic vinyl livery, correct perspective, natural reflections of the golden-hour light on the white paint. The motorcycle, rider uniform and delivery box stay dark green as in the reference. Photorealistic editorial photograph, Manila, Philippines, no extra text.
+```
+
+### Truck for Hire card (21:9) — reference: truck.jpg + emblem
+
+```
+Edit the first reference photo. Keep the exact same scene, camera angle, composition, lighting, warehouse yard, buildings, sky and the three staff members in dark green polo shirts: only change the vehicles' paint. Repaint all three vehicles WHITE: the closed van, and both box trucks, including cabs, box bodies and bumpers. Keep each vehicle's shape, model and position identical. On the side of each white box body place the round TRIBS emblem from the second reference exactly as designed (dark green gear ring, three red stars, serif TRIBS wordmark, EST. 2004) in dark green on the white panel, large and clean; the van gets a smaller dark green TRIBS emblem on its side. Realistic vinyl livery, correct perspective, natural reflections of the late-afternoon light on the white paint. Photorealistic editorial photograph, Metro Manila, Philippines, no extra text.
+```
+
+After generating, save the results over `assets/originals/higgsfield/hero.jpg` and
+`truck.jpg`, then regenerate the web sizes (1600/800 for the hero, 1200/600 for the card).
